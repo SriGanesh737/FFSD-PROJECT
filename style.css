@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{min-height:100%;}
+
+body{
+    background-image: linear-gradient(to right bottom, #bfbbf9, #b3cbff, #afd9ff, #b6e6ff, #c4f0fd, #c9f0f1, #d2eee8, #dbece2, #d9dfd3, #d5d2c9, #cdc7c2, #c1bcbb);
+    /* height: 100vh; */
+
+
+
+}
+
+
+/* .mySearchBar:focus{
+      box-shadow: none;
+      border: 2px solid white;
+}
+
+.corouselContainer{
+    background-color: #c1bcbb;
+}
+
+.carousel-item{
+    height: 70vh;
+
+}
+
+.carousel-item img{
+      margin-left: auto;
+      margin-right: auto;
+} */
+
+/* .dot-button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+     background-color: red;
+} */
+
+
+
+
+.highlights{
+    width: 70%;
+    background-color: black;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+}
+
+.image-part{
+    width: 100%;
+    height: 400px;
+    background-color: palegoldenrod;
+}
+
+.description{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+
+
+.articles{
+
+    margin-top: 30px;
+    display: flex;
+    /* background-color: red; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    flex-wrap:wrap ;
+    row-gap: 20px;
+    column-gap: 30px;
+     /* flex-direction: column; */
+     align-items: center;
+
+}
+
+.article{
+    border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+}
+
+.article-30{
+    /* width: 400px; */
+    width: 28%;
+}
+
+.article-40{
+     /* width: 530px; */
+     width: 34%;
+
+}
+
+.article-60{
+    /* width: 700px; */
+    width: 52%;
+
+}
+
+.article-50{
+    /* width: 615px; */
+    width: 43%;
+
+}
+.article-100{
+     /* width: 1260px; */
+     width: 88%;
+
+}
+
+
+.clip-img{
+    width: 100%;
+    background-color: pink;
+    height: 300px;
+}
+
+.short-desc{
+    width: 100%;
+    background-color: yellow;
+    height: 100px;
+}
+
+
+
+
+@media screen and (max-width:992px){
+    .article-100{width:45%}
+    .article-50{width:45%}
+    .article-60{width:45%}
+    .article-40{width:45%}
+    .article-30{width:45%}
+
+}
+
+@media screen and (max-width:800px){
+    .article-100{width:90%}
+    .article-50{width:90%}
+    .article-60{width:90%}
+    .article-40{width:90%}
+    .article-30{width:90%}
+}
