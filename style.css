@@ -43,6 +43,60 @@ body{
 
 
 
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.myNav{
+    padding: 10px 0px;
+    font-size: 20px;
+    width: 92%;
+}
+
+.nav-item{
+    margin-right: 30px;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-item:hover{
+     font-size: 30px;
+     background-color: #b03060;
+     border-radius: 10px;
+}
+
+.brand-img{
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.profileimg{
+    width: 50px;
+    height: 50px;
+    color: white;
+    border:2px solid white;
+    border-radius: 50%;
+    display: flex;
+    padding-top: 10px;
+    margin-top: 18px;
+    align-self: normal;
+    /* justify-items: center; */
+    justify-content: center;
+    margin-right: 2%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.profileimg:hover{
+    font-size: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    color: #b03060;
+    cursor: pointer;
+}
 
 .highlights{
     width: 70%;
@@ -114,11 +168,7 @@ body{
     width: 43%;
 
 }
-.article-100{
-     /* width: 1260px; */
-     width: 88%;
 
-}
 
 
 .clip-img{
@@ -137,7 +187,7 @@ body{
 
 
 @media screen and (max-width:992px){
-    .article-100{width:45%}
+
     .article-50{width:45%}
     .article-60{width:45%}
     .article-40{width:45%}
@@ -146,9 +196,23 @@ body{
 }
 
 @media screen and (max-width:800px){
-    .article-100{width:90%}
+
     .article-50{width:90%}
     .article-60{width:90%}
     .article-40{width:90%}
     .article-30{width:90%}
 }
+
+
+
+
+/* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } */
+
