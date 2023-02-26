@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Tilt+Neon&family=Tilt+Prism&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* background-0 */
+body{
+    background-color: #dcdcdc; /* Darker gray */
+}
+
+
+    /* background-1 */
+    /* body{
+    background-color: #f7f7f7;
+    background-image: linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%),
+                      linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%);
+    background-size: 40px 40px;
+} */
+
+
+
+.title{
+    font-family: 'Tilt Prism', cursive;
+    font-weight: 600;
+    font-size: 87.5px;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+  }
+  .card{
+    font-family: 'Tilt Neon', cursive;
+    margin-right: 50px;
+    height: 500px;
+    width: 400px;
+    background-color: #FFC0CB;
+    /* background-color: #800000; */
+    /* background-color: #FF69B4;  */
+    /* background-color: #B03060; */
+    color: #333; /* Dark gray */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+  box-shadow: rgba(128, 0, 0, 0.4) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
