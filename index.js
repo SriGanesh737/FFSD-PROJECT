@@ -1,17 +1,7 @@
-
-
-
-const medicalBaseString="./images/health-"
-let medicalIndex=1,medicalCapacity=11;
-
-const slider=()=>{
-    medicalIndex=(medicalIndex+1)%medicalCapacity;
-    if(medicalIndex==0)medicalIndex++;
-     $('.highlights-img').attr('src', medicalBaseString+medicalIndex+'.jpg');
-}
-
-
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
 setInterval(() => {
-
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[currentSlide].classList.add('active');
 }, 2000);
-setInterval(slider, 2000);

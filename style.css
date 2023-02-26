@@ -6,40 +6,8 @@
 html, body{min-height:100%;}
 
 body{
-    background-image: linear-gradient(to right bottom, #bfbbf9, #b3cbff, #afd9ff, #b6e6ff, #c4f0fd, #c9f0f1, #d2eee8, #dbece2, #d9dfd3, #d5d2c9, #cdc7c2, #c1bcbb);
-    /* height: 100vh; */
-
-
-
+    background: linear-gradient(45deg,#fbda61,#ff5acd);
 }
-
-
-/* .mySearchBar:focus{
-      box-shadow: none;
-      border: 2px solid white;
-}
-
-.corouselContainer{
-    background-color: #c1bcbb;
-}
-
-.carousel-item{
-    height: 70vh;
-
-}
-
-.carousel-item img{
-      margin-left: auto;
-      margin-right: auto;
-} */
-
-/* .dot-button{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-
-     background-color: red;
-} */
 
 
 
@@ -57,11 +25,13 @@ body{
 
 .nav-item{
     margin-right: 30px;
+
     transition: all 0.4s ease-in-out;
 }
 
 .nav-item:hover{
-     font-size: 30px;
+     font-size: 22px;
+     padding: 0 5px;
      background-color: #b03060;
      border-radius: 10px;
 }
@@ -100,14 +70,34 @@ body{
 
 .highlights{
     width: 70%;
-    background-color: black;
+    /* background-color: black; */
+    background:transparent;
     height: 600px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    position: relative;
+    margin-top: 2%;
 }
+
+.slide{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 
 .image-part{
     width: 100%;
@@ -202,17 +192,4 @@ body{
     .article-40{width:90%}
     .article-30{width:90%}
 }
-
-
-
-
-/* .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  } */
 
