@@ -14,11 +14,13 @@ body{
 .slideshow-container{
     margin-left: auto;
     margin-right: auto;
-    width:900px;
+    width:1000px;
+
     height:500px;
     margin-top: 20px;
     border-radius: 10px;
     position: relative;
+    margin-bottom: 50px;
     /* overflow: hidden; */
 }
 
@@ -62,7 +64,7 @@ body{
 
 .image-part{
     overflow: hidden;
-    width: 900px;
+    width: 1000px;
     height:400px;
 
 }
@@ -80,5 +82,48 @@ body{
     border-radius: 0 0 10px 10px;
     color: hsl(211, 10%, 45%);
     background-color: azure;
+}
+
+
+@media screen and (max-width:1040px) {
+    .slideshow-container,.image-part{
+     width:700px ;
+     height:450px ;
+    }
+    .left-btn,.right-btn{
+     top:180px;
+     font-size: 35px;
+    }
+    .title-part{
+     font-size: 19px;
+    }
+}
+
+@media screen and (max-width:750px) {
+ .slideshow-container,.image-part{
+  width:500px ;
+  height:320px ;
+ }
+ .left-btn,.right-btn{
+     top:130px;
+     font-size: 30px;
+    }
+    .title-part{
+     font-size: 16px;
+    }
+}
+
+@media screen and (max-width:520px) {
+ .slideshow-container,.image-part{
+  width:400px;
+  height:200px ;
+ }
+ .left-btn,.right-btn{
+     top:60px;
+     font-size:20px ;
+    }
+    .title-part{
+     font-size: 12px;
+    }
 }
 
