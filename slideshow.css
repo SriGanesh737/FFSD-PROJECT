@@ -101,7 +101,7 @@ body{
 
 @media screen and (max-width:750px) {
  .slideshow-container,.image-part{
-  width:500px ;
+  width:85vw ;
   height:320px ;
  }
  .left-btn,.right-btn{
@@ -115,7 +115,7 @@ body{
 
 @media screen and (max-width:520px) {
  .slideshow-container,.image-part{
-  width:400px;
+  width:90vw;
   height:200px ;
  }
  .left-btn,.right-btn{
