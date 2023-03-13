@@ -11,6 +11,8 @@
 
 .heading
 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     margin-left: 4rem;
     font-size: 50px;
     /* font-family: 'IBM Plex Sans', sans-serif; */
@@ -35,6 +37,7 @@ font-family: 'Unbounded', cursive;
 {
     text-align: right;
     margin-right: 15rem;
+    margin-top: 1rem;
 }
 
 .content
