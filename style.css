@@ -191,8 +191,9 @@ body{
     width: 100vw;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.9);
+
 }
-.modal-image img{
+.pop-image{
     width: 50vw;
     height: 400px;
     position: absolute;
@@ -201,7 +202,10 @@ body{
    top: 10vh;
    /* top: 50vh; */
     z-index: 100;
+    border-radius: 10px;
 }
+
+
 
 .close-btn{
     right: 5vw;
@@ -227,6 +231,7 @@ body{
     width: 50vw;
     padding: 0 30px;
     left: 25vw;
+    font-size: 16px;
 }
 
 .read-more{
@@ -255,12 +260,37 @@ body{
     .article-40{width:90%}
     .article-30{width:90%}
 
+    .pop-image{
+        width: 480px;
+        height: 350px;
+        left: calc(50% - 240px);
+    }
+
+
+    .modal-image .description{
+        width: 480px;
+        left: calc(50% - 240px);
+        top: 65vh;
+    }
 
 }
 
 @media screen and (max-width:500px){
     .navbar-brand{
         opacity: 0;
+    }
+
+    .pop-image{
+        width: 70vw;
+        height: 50vw;
+        left: 15vw;
+    }
+
+
+    .modal-image .description{
+        width: 80vw;
+        left: 10vw;
+        top: 50vh;
     }
 
 }
